@@ -1,3 +1,5 @@
+import { roboto } from "@/app/fonts";
+
 export default function Home() {
-  return <div>Home page</div>;
+  return <div className={roboto.className}>Home page</div>;
 }
