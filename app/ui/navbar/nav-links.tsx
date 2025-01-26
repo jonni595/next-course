@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { HiHome, HiUser, HiViewGrid } from "react-icons/hi";
+import { HiHome, HiUser, HiQuestionMarkCircle } from "react-icons/hi";
 import { Links } from "@/app/lib/definitions";
 
 const links: Links[] = [
@@ -18,9 +18,9 @@ const links: Links[] = [
     icon: HiUser,
   },
   {
-    name: "Settings",
-    href: "/settings",
-    icon: HiViewGrid,
+    name: "Help",
+    href: "/help",
+    icon: HiQuestionMarkCircle,
   },
 ];
 

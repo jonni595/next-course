@@ -1,9 +1,9 @@
-import { IoLogoReact } from "react-icons/io5";
+import { SiNextdotjs } from "react-icons/si";
 
 export default function Logo() {
   return (
     <>
-      <IoLogoReact size={30} />
+      <SiNextdotjs size={30} />
     </>
   );
 }
