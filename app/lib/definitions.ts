@@ -12,3 +12,9 @@ export type Posts = {
   title: string;
   userId: number;
 };
+
+export type Params = {
+  params: {
+    postId: string;
+  };
+};
