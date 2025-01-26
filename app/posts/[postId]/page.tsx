@@ -1,10 +1,5 @@
 import { Params, Posts } from "@/app/lib/definitions";
-
-async function loadPost(id: string) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-  const data = await res.json();
-  return data;
-}
+import { loadPost } from "@/app/lib/utils";
 
 export default async function Page({ params }: Params) {
   const post: Posts = await loadPost(params.postId);
