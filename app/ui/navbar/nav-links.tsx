@@ -3,7 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { HiHome, HiUser, HiQuestionMarkCircle } from "react-icons/hi";
+import {
+  HiHome,
+  HiUser,
+  HiQuestionMarkCircle,
+  HiBookmark,
+} from "react-icons/hi";
 import { Links } from "@/app/lib/definitions";
 
 const links: Links[] = [
@@ -21,6 +26,11 @@ const links: Links[] = [
     name: "Help",
     href: "/help",
     icon: HiQuestionMarkCircle,
+  },
+  {
+    name: "Posts",
+    href: "/posts",
+    icon: HiBookmark,
   },
 ];
 
