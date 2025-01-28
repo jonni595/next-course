@@ -18,3 +18,15 @@ export type Params = {
     postId: string;
   };
 };
+
+export interface Users {
+  id: number;
+  email: string;
+  first_name: string;
+  last_name: string;
+  avatar: string;
+}
+
+export type UsersList = {
+  items: Users;
+};
