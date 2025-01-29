@@ -28,5 +28,5 @@ export interface Users {
 }
 
 export type UsersList = {
-  items: Users;
+  items: Users[];
 };

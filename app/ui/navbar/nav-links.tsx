@@ -8,6 +8,7 @@ import {
   HiUser,
   HiQuestionMarkCircle,
   HiBookmark,
+  HiUsers,
 } from "react-icons/hi";
 import { Links } from "@/app/lib/definitions";
 
@@ -31,6 +32,11 @@ const links: Links[] = [
     name: "Posts",
     href: "/posts",
     icon: HiBookmark,
+  },
+  {
+    name: "Users",
+    href: "/users",
+    icon: HiUsers,
   },
 ];
 
