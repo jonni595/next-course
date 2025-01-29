@@ -14,7 +14,7 @@ export default async function UserInfo({ params }: Params) {
   console.log(user);
 
   return (
-    <div className="flex flex-col items-center justify-center w-80 p-8 border border-slate-600 rounded-2xl">
+    <div className="flex flex-col items-center justify-center size-40 p-8 border border-slate-600 rounded-md">
       <div>
         <Image
           src={user.avatar}
