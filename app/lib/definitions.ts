@@ -30,3 +30,14 @@ export interface Users {
 export type UsersList = {
   items: Users[];
 };
+
+export interface Task {
+  id: number;
+  title: string;
+  description: string | null;
+  createdAt: Date;
+}
+
+export type TaskList = {
+  items: Task;
+};
