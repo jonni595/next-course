@@ -1,11 +1,15 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/app/lib/prisma";
 
-type Params = {
+interface Params {
   params: {
     id: number;
   };
-};
+}
+
+interface CustomError extends Error {
+  message: string;
+}
 
 export async function GET(request: Request, { params }: Params) {
   const { id } = await params;
@@ -41,6 +45,7 @@ export async function DELETE(request: Request, { params }: Params) {
     });
     return NextResponse.json(taskRemoved);
   } catch (error) {
-    return NextResponse.json(error);
+    const customError = error as CustomError;
+    return NextResponse.json({ error: customError.message });
   }
 }
